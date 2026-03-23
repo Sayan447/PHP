@@ -1,0 +1,78 @@
+P-1:
+    Q:name,age,course
+$student = [
+    "name" => "K.L.Rahul",
+    "age" => 21,
+    "course" => "BCA"
+];
+---------------------------------------
+    
+P-2:
+    Q:name,age,course,computer-marks
+$student = [
+    "name" => "K.L.Rahul",
+    "age" => 21,
+    "course" => "BCA",
+    "marks" => [
+        "math" => 85,
+        "english" => 78,
+        "computer" => 92
+    ]
+];
+
+-----------------------------------------
+P-3:
+    
+Q:id,name,math marks,course,avg_marks --->each
+
+$students = [
+    [
+        "id" => 1,
+        "name" => "K.L.Rahul",
+        "details" => [
+            "age" => 21,
+            "course" => "BCA",
+            "marks" => [
+                "math" => 85,
+                "english" => 78
+            ]
+        ]
+    ],
+    [
+        "id" => 2,
+        "name" => "john doe",
+        "details" => [
+            "age" => 22,
+            "course" => "BSc IT",
+            "marks" => [
+                "math" => 88,
+                "english" => 81
+            ]
+        ]
+    ]
+];
+ ------------------------------------------
+P4:
+    Q:user_id,city,product[name,price]
+$user = [
+    "user_id" => 101,
+    "username" => "saptarshi",
+    "email" => "sap@example.com",
+    "address" => [
+        "city" => "Kolkata",
+        "state" => "West Bengal",
+        "pin" => 700001
+    ],
+    "orders" => [
+        [
+            "order_id" => 1,
+            "product" => "Laptop",
+            "price" => 55000
+        ],
+        [
+            "order_id" => 2,
+            "product" => "Mouse",
+            "price" => 700
+        ]
+    ]
+];

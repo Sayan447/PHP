@@ -1,0 +1,70 @@
+https://www.php.net/docs.php
+https://www.w3schools.com/php/DEFAULT.asp
+
+
+
+
+
+
+
+PHP Syntax & Basics
+
+Variables & Data Types
+
+Operators
+
+Control Structures (if-else, loops)
+
+Functions
+
+Arrays (Indexed, Associative, Multidimensional)
+
+Superglobals ($_GET, $_POST, $_SESSION, etc.)
+
+
+
+
+
+Find the length of a given string
+Count total characters excluding spaces
+Convert a string to uppercase
+Convert a string to lowercase
+Convert the first character to uppercase
+Convert the first letter of each word to uppercase
+Reverse a given string
+Remove leading and trailing spaces from a string
+Remove all white spaces from a string
+Shuffle characters of a string
+Extract a substring from a given string
+Search for a word in a string
+Find the position of a word in a string
+Count the number of occurrences of a word
+Check whether a string starts with a given word
+Check whether a string ends with a given word
+Replace a word in a string
+Replace multiple unwanted words
+Replace a part of a string with another string
+Remove special characters from a string
+Count total words in a string
+Count total sentences in a string
+Count total vowels
+Count digits in a string
+Count special characters
+Count uppercase and lowercase letters separately
+Compare two strings
+Compare two strings ignoring case
+Check whether a string is a palindrome
+Check whether a string contains only alphabets
+Check whether a string contains only numbers
+Check whether a string is alphanumeric
+Remove HTML tags from a string
+Convert special characters to HTML entities
+Convert newline characters into line breaks
+Escape special characters in a string
+Find the longest word in a string
+Find the shortest word in a string
+Count frequency of each character
+Count frequency of each word
+Check whether two strings are anagrams
+Reverse words in a sentence
+Remove duplicate characters from a string

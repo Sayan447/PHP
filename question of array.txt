@@ -1,0 +1,11 @@
+Find the maximum and minimum value
+Remove duplicate values
+Sort an array in ascending & descending order
+Check if a value exists in an array
+Merge two arrays
+Find common elements between two arrays
+Reverse an array without built-in function
+Find the second largest element
+Count frequency of each element
+Flatten a multidimensional      ([1, [2, 3], [4, [5, 6]]])
+Rotate array right by 1
