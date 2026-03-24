@@ -1,0 +1,8 @@
+1.Read CSV and Display Full Names
+2.Count Total Customers
+3.List All Unique Countries
+4.Display First Name, Last Name, Email,Company for customers whose country is Macao
+5.Show customers whose Subscription Date > 2021-01-01
+6.Customers with HTTPS Websites
+7.Export Customers from Asia
+8.Count Customers Per Country

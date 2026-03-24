@@ -163,25 +163,25 @@ if ($average > $highestAvg) {
 };
 print_r($Bca);
 
-// csv file
-$filename = "bca_students.csv";
+// // csv file
+// $filename = "bca_students.csv";
 
-// open file
-$file = fopen($filename, "w");
+// // open file
+// $file = fopen($filename, "w");
 
-// add header row
-fputcsv($file, ["ID", "Name", "Grade"]);
+// // add header row
+// fputcsv($file, ["ID", "Name", "Grade"]);
 
-// write data
-foreach ($Bca as $student) {
-    fputcsv($file, [
-        $student['id'],
-        $student['name'],
-        $student['grade']
-    ]);
-}
+// // write data
+// foreach ($Bca as $student) {
+//     fputcsv($file, [
+//         $student['id'],
+//         $student['name'],
+//         $student['grade']
+//     ]);
+// }
 
-// close file
-fclose($file);
+// // close file
+// fclose($file);
 
-echo "CSV file created successfully!";
+// echo "CSV file created successfully!";
