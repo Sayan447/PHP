@@ -1,49 +1,146 @@
-<?php
+<?php 
+// $file = fopen("test_set.csv", "r"); 
 
-// $filename = "test_set.csv";
+// // display full name and read csv
+// while (($row = fgetcsv($file)) !== false) {
+//     echo ('Full Name:- '.$row[2]."-".$row[3]).PHP_EOL;
+    
+// };
+
+
+// Count Total Customers
+// $filename = 'test_set.csv';
 // $count = 0;
-
-
-// if (!file_exists($filename)) {
-//     die("CSV file not found!");
-// }
-// if (($file = fopen($filename, "r")) !== FALSE) {
-//     while (fgetcsv($file) !== FALSE) {
+// // $country = [];
+// if(($file = fopen($filename, 'r')) !== FALSE){
+//     while(fgetcsv($file) !== FALSE){
 //         $count++;
+//         
 //     }
 //     fclose($file);
 // }
 
-// echo "Total customers: " . $count;
-// -----------------------------------------
-$filename = "test_set.csv";
-$countries = [];
+// echo PHP_EOL;
+// echo 'Total Customer '. $count.PHP_EOL;
 
-// Open file
-if (($file = fopen($filename, "r")) !== FALSE) {
+// -----------=====================------------------
+// $countries = [];
 
-    // Skip header row
-    fgetcsv($file, 0, ",", "\"", "\\");
+// if (($file = fopen($filename, 'r')) !== FALSE) {
+//     while (($data = fgetcsv($file)) !== FALSE) {
+//         if (!empty($data[6])) {           //  
+//             //$countries[] = $data[6]; 
+//             $key = $data[6];
+//             $countries[$key] = true;
+//         }
+//     }
+//     fclose($file);
 
-    // Read rows
-    while (($row = fgetcsv($file, 0, ",", "\"", "\\")) !== FALSE) {
 
-        // Country is in column index 2 (change if different)
-        $country = trim($row[2]);
 
-        if (!empty($country)) {
-            $countries[] = $country;
+//     //$uniqueCountries = array_unique($countries);
+//     $uniqueCountries = array_keys($countries);
+//     print_r ($uniqueCountries);
+//     // exit();
+
+     
+//     // echo PHP_EOL;
+
+//     // to show the format of array 
+//     foreach ($uniqueCountries as $country){
+//         print_r($country, '\n');
+//     }
+//     // echo "Unique Countries: " . implode(', ', $uniqueCountries).'\n' . PHP_EOL;
+// }
+
+
+
+
+
+
+
+
+
+// $filename = 'test_set.csv';
+
+
+
+
+
+
+
+
+
+
+$handle = fopen("test_set.csv", "r");
+
+$header = fgetcsv($handle);
+
+
+ 
+
+// find customer respect by  subscription date
+// $firstname = array_search("First Name", $header);
+// $lastname = array_search("Last Name", $header);
+// $dateIndex = array_search("Subscription Date", $header);
+
+// while (($row = fgetcsv($handle)) !== false) {
+   
+//     // print_r(strtotime($row[$dateIndex]));
+//     // exit();
+    
+// if ($row[$dateIndex] > "2021-01-01") {
+        
+//         print_r( $row[$firstname].'-'.$row[$lastname]. PHP_EOL); 
+//     }
+ 
+// }
+
+// fclose($handle);
+
+
+
+
+
+// Display First Name, Last Name, Email,Company for customers whose country is Macao
+$macao = [];
+
+if (($handle = fopen('test_set.csv', 'r')) !== FALSE) {
+    while (($data = fgetcsv($handle)) !== FALSE) {
+     
+        if ($data[6] === "Macao") {
+           $macao[] = [
+            'FirstName' => $data[2],
+            'Last Name' => $data[3],
+            'Company' => $data[4],
+            'city' => $data[5],
+            "Email" => $data[9],
+        ];
         }
     }
-
-    fclose($file);
+    fclose($handle);
 }
 
-// Get unique countries
-$unique_countries = array_unique($countries);
+// Optional: print to check
+print_r($macao);
 
-// Display
-echo "<pre>";
-print_r($unique_countries);
-echo "</pre>";
 
+// exit();
+
+
+
+
+
+
+
+$csvUrls = [];
+// Customers with HTTPS Websites
+$handle = fopen("test_set.csv", "r");
+
+$header = fgetcsv($handle);
+
+while(($data = fgetcsv($handle)) !== FALSE){
+    $csvUrls[] = $data[11];
+}
+fclose($handle);
+print_r($csvUrls);
