@@ -230,32 +230,33 @@
 
 
 // 8
-$filename = "test_set.csv";
-$countryCount = []; // array to store country -> count
+// $filename = "test_set.csv";
+// $countryCount = []; // array to store country -> count
 
-if (($file = fopen($filename, "r")) !== FALSE) {
+// if (($file = fopen($filename, "r")) !== FALSE) {
 
-    // Skip header row
-    fgetcsv($file);
+//     // Skip header row
+//     fgetcsv($file);
 
-    while (($row = fgetcsv($file)) !== FALSE) {
+//     while (($row = fgetcsv($file)) !== FALSE) {
 
       
-        $country = $row[6];
+//         $country = $row[6];
 
         
-            if (!isset($countryCount[$country])) {
-                $countryCount[$country] = 1;
-            } else {
-                $countryCount[$country]++;
-            }
-        }
-    }
+//             if (empty($countryCount[$country])) {
+//                 $countryCount[$country] = 1;
+//             } else {
+//                 $countryCount[$country]++;
+//             }
+//         }
+//     }
 
-    fclose($file);
+//     fclose($file);
 
 
-// Print result
-foreach ($countryCount as $country => $count) {
-    echo $country . " : " . $count . PHP_EOL;
-}
+// // Print result
+// foreach ($countryCount as $country => $count) {
+//     print_r ($country . " : " . $count . PHP_EOL);
+     
+// }
